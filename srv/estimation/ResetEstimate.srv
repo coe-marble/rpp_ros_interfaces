@@ -1,0 +1,7 @@
+builtin_interfaces/Time stamp
+float64[] state
+float64[] covariance
+bool activate
+---
+uint8 status
+string message

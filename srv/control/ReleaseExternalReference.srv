@@ -1,0 +1,11 @@
+# Release matching external-reference authority and clear its cached references.
+# A successful release also zeroes stored wrench and actuator commands, but
+# does not itself publish an actuator command. Axis selections and control
+# authority remain unchanged. Other valid references may drive the next update,
+# which can recompute outputs before publishing them. No persistent stop is
+# latched. Disable both twist and wrench selections
+# through SelectSignal while retaining control authority when aborting control.
+string identity_token
+---
+bool success
+string message

@@ -1,0 +1,9 @@
+# Claim one complete reference-generator interface from ControlLayout.goals.
+# Ownership persists until release or replacement of that generator instance.
+string interface_name
+string identity # for introspection only; matching identities do not share tokens
+
+---
+bool success
+string identity_token
+string message

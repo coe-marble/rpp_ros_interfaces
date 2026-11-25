@@ -1,0 +1,21 @@
+# Goal
+# Amplitudes are ordered by dof_indices and must have equal length.
+float32[] step_amplitudes
+float32 step_duration_s
+# Wrench-axis indices in [0, 5]: force x/y/z, torque x/y/z.
+uint8[] dof_indices
+float32 pre_step_duration_s
+float32 post_step_duration_s
+bool record_to_file
+---
+# Result
+bool success
+string message
+string recording_file
+geometry_msgs/WrenchStamped[] input_samples
+nav_msgs/Odometry[] odometry_samples
+---
+# Feedback
+float32 elapsed_s
+uint32 input_sample_count
+uint32 odometry_sample_count

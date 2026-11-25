@@ -1,0 +1,17 @@
+#Operation modes
+uint8 DONTCARE=0
+uint8 DISABLEAXIS=1
+uint8 EXTERNAL=2
+uint8 INTERNAL=3
+
+uint8 U=0
+uint8 V=1
+uint8 W=2
+uint8 P=3
+uint8 Q=4
+uint8 R=5
+
+string identity_token
+uint8[6] twist_selection
+uint8[6] wrench_selection
+---

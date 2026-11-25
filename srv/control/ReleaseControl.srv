@@ -1,0 +1,6 @@
+# Release the token authorizing SelectSignal. Does not clear references,
+# change axis selections, or stop actuator outputs. Not an abort command.
+string identity_token
+---
+bool success
+string message
