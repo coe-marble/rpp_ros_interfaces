@@ -31,7 +31,9 @@ advance and `input_dt_ns` is the input slew interval.
 
 `EstimatorEstimate` provides one coherent state/covariance/reference-time
 snapshot. `NumericSample` can additionally publish its state grouped by resource
-for direct consumption by the control adapter.
+for direct consumption by the control adapter. `EstimatorLayout.state_interfaces`
+declares those exact resource layouts; their names, meanings and published order
+remain stable when an estimator's internal coordinate order changes.
 
 Control definitions were copied from `marble_control_msgs`, with package-local
 references updated to `rpp_ros_interfaces`. The ROS type names therefore change;
